@@ -20,7 +20,7 @@ import android.widget.TextView;
 public class CoordinateActivity extends Activity {
 
     private TextView tv;
-    private RelativeLayout rela;
+    private String TAG = "CustomViewTag";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,20 +29,18 @@ public class CoordinateActivity extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         tv = findViewById(R.id.tv);
-        rela = findViewById(R.id.rela);
         tv.postDelayed(new Runnable() {
             @SuppressLint("NewApi")
             @Override
             public void run() {
-                Log.i("sss", "onCreate: .........."+tv.getTranslationX());
-                Log.i("sss", "onCreate: .........."+tv.getTranslationY());
-
-                Log.i("sss", "onCreate: .........."+tv.getX());
-                Log.i("sss", "onCreate: .........."+tv.getY());
-                Log.i("sss", "onCreate: .........."+tv.getTop());
-                Log.i("sss", "onCreate: .........."+tv.getBottom());
-                Log.i("sss", "onCreate: .........."+tv.getLeft());
-                Log.i("sss", "onCreate: .........."+tv.getRight());
+                Log.i(TAG, "动画前: "+tv.getTranslationX());
+                Log.i(TAG, "动画前: "+tv.getTranslationY());
+                Log.i(TAG, "动画前: "+tv.getX());
+                Log.i(TAG, "动画前: "+tv.getY());
+                Log.i(TAG, "动画前: "+tv.getTop());
+                Log.i(TAG, "动画前: "+tv.getBottom());
+                Log.i(TAG, "动画前: "+tv.getLeft());
+                Log.i(TAG, "动画前: "+tv.getRight());
             }
         }, 1000);
 
@@ -54,18 +52,16 @@ public class CoordinateActivity extends Activity {
                 tv.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Log.i("sss", "onCreate: .........."+tv.getTranslationX());
-                        Log.i("sss", "onCreate: .........."+tv.getTranslationY());
-
-                        Log.i("sss", "onCreate: .........."+tv.getX());
-                        Log.i("sss", "onCreate: .........."+tv.getY());
-
-                        Log.i("sss", "onCreate: .........."+tv.getTop());
-                        Log.i("sss", "onCreate: .........."+tv.getBottom());
-                        Log.i("sss", "onCreate: .........."+tv.getLeft());
-                        Log.i("sss", "onCreate: .........."+tv.getRight());
+                        Log.i(TAG, "动画后: "+tv.getTranslationX());
+                        Log.i(TAG, "动画后: "+tv.getTranslationY());
+                        Log.i(TAG, "动画后: "+tv.getX());
+                        Log.i(TAG, "动画后: "+tv.getY());
+                        Log.i(TAG, "动画后: "+tv.getTop());
+                        Log.i(TAG, "动画后: "+tv.getBottom());
+                        Log.i(TAG, "动画后: "+tv.getLeft());
+                        Log.i(TAG, "动画后: "+tv.getRight());
                     }
-                }, 1500);
+                }, 1000);
             }
         });
     }

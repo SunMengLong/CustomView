@@ -7,8 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/PaintImg/PaintImg.iml" filepath="$PROJECT_DIR$/PaintImg/PaintImg.iml" />
       <module fileurl="file://$PROJECT_DIR$/PaintText/PaintText.iml" filepath="$PROJECT_DIR$/PaintText/PaintText.iml" />
       <module fileurl="file://$PROJECT_DIR$/PathEffect/PathEffect.iml" filepath="$PROJECT_DIR$/PathEffect/PathEffect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PorterDuffXfermode/PorterDuffXfermode.iml" filepath="$PROJECT_DIR$/PorterDuffXfermode/PorterDuffXfermode.iml" />
       <module fileurl="file://$PROJECT_DIR$/SeismicWave/SeismicWave.iml" filepath="$PROJECT_DIR$/SeismicWave/SeismicWave.iml" />
-      <module fileurl="file://$PROJECT_DIR$/VerticalScollTextView/VerticalScollTextView.iml" filepath="$PROJECT_DIR$/VerticalScollTextView/VerticalScollTextView.iml" />
     </modules>
   </component>
 </project>

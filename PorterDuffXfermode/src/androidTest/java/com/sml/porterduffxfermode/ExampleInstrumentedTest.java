@@ -1,4 +1,4 @@
-package com.sml.verticalscolltextview;
+package com.sml.porterduffxfermode;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.sml.verticalscolltextview", appContext.getPackageName());
+        assertEquals("com.sml.porterduffxfermode", appContext.getPackageName());
     }
 }

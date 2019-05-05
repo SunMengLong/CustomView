@@ -1,4 +1,4 @@
-package com.sml.verticalscolltextview;
+package com.sml.porterduffxfermode;
 
 import org.junit.Test;
 
