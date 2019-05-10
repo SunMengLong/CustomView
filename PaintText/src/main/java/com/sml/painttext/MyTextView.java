@@ -17,12 +17,12 @@ import android.view.View;
 public class MyTextView extends View {
 
     Paint paint = new Paint();
-    private String str = "今天是一个好好学习的好日子，今天是2019年4月3日，abcdefg";
+    private String str = "好好学习，努力奋斗，abcdefg";
 
     public MyTextView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         paint.setColor(Color.RED);
-        paint.setTextSize(20);
+        paint.setTextSize(25);
         setBackgroundColor(Color.BLUE);
     }
 
