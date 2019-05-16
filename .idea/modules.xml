@@ -4,10 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CustomView.iml" filepath="$PROJECT_DIR$/CustomView.iml" />
       <module fileurl="file://$PROJECT_DIR$/PaintCircle/PaintCircle.iml" filepath="$PROJECT_DIR$/PaintCircle/PaintCircle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PaintEffect/PathEffect.iml" filepath="$PROJECT_DIR$/PaintEffect/PathEffect.iml" />
       <module fileurl="file://$PROJECT_DIR$/PaintImg/PaintImg.iml" filepath="$PROJECT_DIR$/PaintImg/PaintImg.iml" />
       <module fileurl="file://$PROJECT_DIR$/PaintPorterDuffXfermode/PaintPorterDuffXfermode.iml" filepath="$PROJECT_DIR$/PaintPorterDuffXfermode/PaintPorterDuffXfermode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PaintShader/PaintShader.iml" filepath="$PROJECT_DIR$/PaintShader/PaintShader.iml" />
       <module fileurl="file://$PROJECT_DIR$/PaintText/PaintText.iml" filepath="$PROJECT_DIR$/PaintText/PaintText.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PathEffect/PathEffect.iml" filepath="$PROJECT_DIR$/PathEffect/PathEffect.iml" />
       <module fileurl="file://$PROJECT_DIR$/SeismicWave/SeismicWave.iml" filepath="$PROJECT_DIR$/SeismicWave/SeismicWave.iml" />
     </modules>
   </component>

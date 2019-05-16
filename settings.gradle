@@ -1,1 +1,1 @@
-include ':SeismicWave', ':PaintText', ':PaintCircle', ':PathEffect', ':PaintImg', ':PaintPorterDuffXfermode'
+include ':SeismicWave', ':PaintText', ':PaintCircle', ':PaintEffect', ':PaintImg', ':PaintPorterDuffXfermode', ':PaintShader'
