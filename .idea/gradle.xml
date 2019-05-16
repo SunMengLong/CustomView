@@ -10,9 +10,9 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/PaintCircle" />
             <option value="$PROJECT_DIR$/PaintImg" />
+            <option value="$PROJECT_DIR$/PaintPorterDuffXfermode" />
             <option value="$PROJECT_DIR$/PaintText" />
             <option value="$PROJECT_DIR$/PathEffect" />
-            <option value="$PROJECT_DIR$/PorterDuffXfermode" />
             <option value="$PROJECT_DIR$/SeismicWave" />
           </set>
         </option>
