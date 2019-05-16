@@ -47,12 +47,12 @@ public class MeasureView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        //画矩形
-        int left = getLeft();
-        int right = getRight();
-        int top = getTop();
-        int bottom = getBottom();
-        canvas.drawRect(left,top,right,bottom,paint);
+//        //画矩形
+//        int left = getLeft();
+//        int right = getRight();
+//        int top = getTop();
+//        int bottom = getBottom();
+//        canvas.drawRect(left,top,right,bottom,paint);
 
 //        //画圆
 //        int radius = Math.min(getWidth(),getHeight());
@@ -62,7 +62,7 @@ public class MeasureView extends View {
 //        //画扇形
 //        paint.setColor(Color.GREEN);
 //        RectF rect = new RectF(0f,0f,400f,400f); //圆心坐标（(right-left)/2,(bottom-top)/2）
-//        canvas.drawArc(rect,0,60,false,paint);//圆点位置，开始角度，扫过的角度，是否要焦点圆心，画笔。注意：结束角度 = sweepAngle + startAngle;
+//        canvas.drawArc(rect,0,60,true,paint);//圆点位置，开始角度，扫过的角度，是否要焦点圆心，画笔。注意：结束角度 = sweepAngle + startAngle;
 
         //绘制Bitmap
 //        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.mipmap.ic_launcher);
@@ -76,13 +76,13 @@ public class MeasureView extends View {
 //        canvas.drawText("欢迎光临达利世纪酒店",100,100,paint);
 
         //绘制路径
-//        paint.setColor(Color.GREEN);
-//        Path p = new Path();
-//        p.moveTo(100, 100);
-//        p.lineTo(200, 50);
-//        p.lineTo(300, 100);
-//        p.lineTo(200,400);
-//        canvas.drawPath(p,paint);
+        paint.setColor(Color.GREEN);
+        Path p = new Path();
+        p.moveTo(100, 100); //第一个点的坐标
+        p.lineTo(200, 50);  //第二个点的坐标
+        p.lineTo(300, 100); //第三个点的坐标
+        p.lineTo(200,400);  //第四个点的坐标
+        canvas.drawPath(p,paint);
 
         //paint能够拿到：所要绘制的集合图形、文字或者Bitmap的颜色、风格等信息
         //画笔有3种构建方法:
@@ -103,7 +103,7 @@ public class MeasureView extends View {
         if(mode == MeasureSpec.EXACTLY){
             result = size;
         }else{
-            result = 200;
+            result = 720;
             if(mode == MeasureSpec.AT_MOST){
                 result = Math.min(result,size);
             }
@@ -123,7 +123,7 @@ public class MeasureView extends View {
         if(mode == MeasureSpec.EXACTLY){
             result = size;
         }else{
-            result = 200;
+            result = 500;
             if(mode == MeasureSpec.AT_MOST){
                 result = Math.min(result,size);
             }

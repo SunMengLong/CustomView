@@ -39,7 +39,7 @@ public class CircleView extends View {
         paint.setStyle(Paint.Style.STROKE); //空心
 
         //-------------------------------------------------设置画笔属性------------------------------------------------------------
-//        paint.setFlags(Paint.ANTI_ALIAS_FLAG ); //抗锯齿
+        paint.setFlags(Paint.ANTI_ALIAS_FLAG ); //抗锯齿
         paint.setFlags(Paint.DITHER_FLAG  ); //防抖动
 
         canvas.drawCircle(width/2,height/2,Math.min(width,height)/2,paint);

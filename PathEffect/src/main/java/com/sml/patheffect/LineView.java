@@ -61,7 +61,6 @@ public class LineView extends View {
         pathEffects[0] = new PathEffect(); //1.默认效果
         pathEffects[1] = new CornerPathEffect(20f); //2.将各线段之间的夹角变成圆角，radius是圆角的半径
         pathEffects[2] = new DashPathEffect(new float[]{10f, 5f, 20f, 15f},10); //3.绘制虚线，intervals最少为2个，phase是偏移量 依次绘制为：实线10f + 虚线5f + 实线20f + 虚线10f
-
         Path p = new Path();
         p.addRect(0, 0, 30, 5, Path.Direction.CCW);
         pathEffects[3] = new PathDashPathEffect(p, 60, 0, PathDashPathEffect.Style.ROTATE); //4.和DashPathEffect差不多，只是能自定义图形来绘制Path。 shape是绘制的图形、adwance是图形之间的间距、phase是偏移量、样式

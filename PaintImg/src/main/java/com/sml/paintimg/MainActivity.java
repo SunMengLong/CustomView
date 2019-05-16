@@ -31,11 +31,11 @@ public class MainActivity extends Activity implements SeekBar.OnSeekBarChangeLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initView();
+//        initView();
     }
 
     private void initView() {
-        iv = findViewById(R.id.img);
+//        iv = findViewById(R.id.img);
         bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.timg);
 
         //通过矩阵改变图片颜色
@@ -65,15 +65,15 @@ public class MainActivity extends Activity implements SeekBar.OnSeekBarChangeLis
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
         switch (seekBar.getId()) {
-            case R.id.seekbar_sediao:
-                hue = (progress - MID_VALUE) * 1.0f / MID_VALUE * 180;
-                break;
-            case R.id.seekbar_baohedu:
-                saturation = progress * 1.0f / MID_VALUE;
-                break;
-            case R.id.seekbar_liangdu:
-                lum = progress * 1.0F / MID_VALUE;
-                break;
+//            case R.id.seekbar_sediao:
+//                hue = (progress - MID_VALUE) * 1.0f / MID_VALUE * 180;
+//                break;
+//            case R.id.seekbar_baohedu:
+//                saturation = progress * 1.0f / MID_VALUE;
+//                break;
+//            case R.id.seekbar_liangdu:
+//                lum = progress * 1.0F / MID_VALUE;
+//                break;
         }
         iv.setImageBitmap(handleImageEffect(bitmap, hue, saturation, lum));
     }
