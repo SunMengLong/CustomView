@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Bitmap" />
+            <option value="$PROJECT_DIR$/Canvas" />
             <option value="$PROJECT_DIR$/PaintCircle" />
             <option value="$PROJECT_DIR$/PaintEffect" />
             <option value="$PROJECT_DIR$/PaintImg" />
