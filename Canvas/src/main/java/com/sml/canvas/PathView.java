@@ -115,8 +115,8 @@ public class PathView extends View {
 //        Paint textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 //        textPaint.setTextSize(30f);
 //        RectF rectF = new RectF(300,300,490,490);
-////        path.addOval(rectF, Path.Direction.CW);
-//        path.addOval(rectF, Path.Direction.CCW);//改变闭合方向，文字会内侧且逆时针绘制
+//        path.addOval(rectF, Path.Direction.CW);
+////        path.addOval(rectF, Path.Direction.CCW);//改变闭合方向，文字会内侧且逆时针绘制
 //        canvas.drawPath(path,paint);
 //        char[] chaars = new char[]{'a','b','c','d','e'};
 //        canvas.drawTextOnPath(chaars,0,5,path,0f,5,textPaint);
@@ -126,7 +126,7 @@ public class PathView extends View {
          * isRtl 为true ： 文字倒着绘制
          */
 //        Paint textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-//        textPaint.setTextSize(30f);
+//        textPaint.setTextSize(60f);
 //        char[] chars = new char[]{'a', 'b', 'c', 'd', 'e'};
 //        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 //            canvas.drawTextRun(chars, 0, chars.length, 0, chars.length, 100f, 100f, true, textPaint);
@@ -137,7 +137,7 @@ public class PathView extends View {
          */
 //        Rect rect = new Rect(0,0,300,300);
 //        canvas.drawColor(Color.BLUE); //绘制背景色
-////        canvas.rotate(30); //画布旋转
+//        canvas.rotate(30); //画布旋转
 //        canvas.clipRect(rect); //剪切画布
 //        canvas.drawColor(Color.RED); //剪切后的画布背景色
 //        canvas.drawRect(100,100,400,400,new Paint(Paint.ANTI_ALIAS_FLAG)); //看一下剪切的画布是否生效
@@ -156,7 +156,7 @@ public class PathView extends View {
 //        //Region.Op.UNION 两次剪切的和
 //        //Region.Op.REVERSE_DIFFERENCE 第二次剪切的非交集部分
 //        //Region.Op.XOR 两次绘制的非交集部分
-//        canvas.clipRect(rect2, Region.Op.XOR); //绘制第二块区域
+//        canvas.clipRect(rect2, Region.Op.REVERSE_DIFFERENCE); //绘制第二块区域
 //        //截取后有效区域绘制红色
 //        canvas.drawColor(Color.RED);
 //        canvas.restore();
@@ -168,7 +168,7 @@ public class PathView extends View {
          * clipPath 裁剪不规则画布
          */
 //        Path path = new Path();
-//        path.addCircle(100,100,100, Path.Direction.CW); //裁剪不规则图形
+//        path.addCircle(100,100,100, Path.Direction.CCW); //裁剪不规则图形
 //        canvas.drawColor(Color.BLUE);
 //        canvas.clipPath(path);
 //        canvas.drawColor(Color.RED);
@@ -195,7 +195,7 @@ public class PathView extends View {
          * scale缩放
          */
 //        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.img2);
-////        canvas.scale(0.1f,0.1f); //缩放的值为 0 - 1f 1代表不缩放 默认的缩放中心是（0,0）
+////        canvas.scale(0.2f,0.2f); //缩放的值为 0 - 1f 1代表不缩放 默认的缩放中心是（0,0）
 //        canvas.scale(0.2f, 0.2f, 360, 0); //指定缩放中心 （360,0）
 //        canvas.drawBitmap(bitmap, 0, 0, paint);
 
@@ -203,7 +203,7 @@ public class PathView extends View {
          * 错切
          */
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.img2);
-        canvas.skew(1.0f,0);
+        canvas.skew(0.3f,0);
         canvas.drawBitmap(bitmap, 0, 0, paint);
     }
 

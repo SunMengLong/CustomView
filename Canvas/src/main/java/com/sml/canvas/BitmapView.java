@@ -46,7 +46,7 @@ public class BitmapView extends View{
          * 参数3：图片的左上角Y轴坐标
          * 参数4：画笔
          */
-//        canvas.drawBitmap(srcBitmap,0,0,paint);
+        canvas.drawBitmap(srcBitmap,0,0,paint);
 
         /**
          * 2.
@@ -67,7 +67,7 @@ public class BitmapView extends View{
          * 参数3：画笔
          */
 //        Matrix matrix = new Matrix();
-//        matrix.setTranslate(10f,10f);
+//        matrix.setTranslate(20f,20f);
 //        canvas.drawBitmap(srcBitmap,matrix,paint);
 
     }

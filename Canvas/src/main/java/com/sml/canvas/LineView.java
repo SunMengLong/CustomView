@@ -19,6 +19,7 @@ public class LineView extends View{
     public LineView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         paint.setColor(Color.GREEN);
+        paint.setStrokeWidth(3f);
     }
 
     @Override
